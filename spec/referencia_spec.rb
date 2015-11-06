@@ -9,8 +9,6 @@ describe Referencia do
     expect(Referencia::VERSION).not_to be nil
   end
   
-  
-  
   it "Existe un método para obtener el listado de autores" do
     @libro.getautores.should eq(["Dave Thomas", "Andy Hunt", "Chad Fowler"])
   end
@@ -26,7 +24,11 @@ describe Referencia do
           
   it "Existe un método para obtener una editorial" do
     @libro.geteditorial.should eq("Pragmatic Bookshelf")
-  end 
+  end
+  
+  it "Existe un método para obtener un número de edición" do
+          @libro.getnumedicion.should eq("4 edition")    
+  end
         
         
 end

@@ -30,6 +30,14 @@ module Referencia
             return @editorial
         end
         
+        def getnumedicion
+            return @numedicion
+        end
+        
+        def getfecha
+            return @fecha
+        end
+        
         
         
         
