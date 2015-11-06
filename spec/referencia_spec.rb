@@ -10,36 +10,36 @@ describe Referencia do
   end
   
   it "Existe un método para obtener el listado de autores" do
-    @libro.getautores.should eq(["Dave Thomas", "Andy Hunt", "Chad Fowler"])
+    expect(@libro.getautores).to eq(["Dave Thomas", "Andy Hunt", "Chad Fowler"])
   end
   
   
   it "Existe un método para obtener titulo" do
-    @libro.gettitulo.should eq("Programming Ruby 1.9 & 2.0: The Pragmatic Programmers' Guide")
+    expect(@libro.gettitulo).to eq("Programming Ruby 1.9 & 2.0: The Pragmatic Programmers' Guide")
   end 
   
   it "Existe un método para obtener serie" do
-    @libro.getserie.should eq("(The Facets of Ruby)")
+    expect(@libro.getserie).to eq("(The Facets of Ruby)")
   end 
           
   it "Existe un método para obtener una editorial" do
-    @libro.geteditorial.should eq("Pragmatic Bookshelf")
+    expect(@libro.geteditorial).to eq("Pragmatic Bookshelf")
   end
   
   it "Existe un método para obtener un número de edición" do
-    @libro.getnumedicion.should eq("4 edition")    
+    expect(@libro.getnumedicion).to eq("4 edition")    
   end
   
   it "Existe un método para obtener uno más números ISBN" do
-      @libro.getisbn.should eq(["ISBN-13: 978-1937785499","ISBN-10: 1937785491"])    
+      expect(@libro.getisbn).to eq(["ISBN-13: 978-1937785499","ISBN-10: 1937785491"])    
   end 
   
   it "Existe un método para obtener uno más números ISBN" do
-    @libro.getisbn.should eq(["ISBN-13: 978-1937785499","ISBN-10: 1937785491"])    
+    expect(@libro.getisbn).to eq(["ISBN-13: 978-1937785499","ISBN-10: 1937785491"])    
   end 
   
   it 'Existe un método para obtener la referencia formateada' do
-    @libro.formateada.should eq("Dave Thomas, Andy Hunt, Chad Fowler \n Programming Ruby 1.9 & 2.0: The Pragmatic Programmers' Guide \n (The Facets of Ruby) \n Pragmatic Bookshelf \n 4 edition \n (July 7, 2013) \n ISBN-13: 978-1937785499, ISBN-10: 1937785491") 
+    expect(@libro.formateada).to eq("Dave Thomas, Andy Hunt, Chad Fowler \n Programming Ruby 1.9 & 2.0: The Pragmatic Programmers' Guide \n (The Facets of Ruby) \n Pragmatic Bookshelf \n 4 edition \n (July 7, 2013) \n ISBN-13: 978-1937785499, ISBN-10: 1937785491") 
  end
         
         
