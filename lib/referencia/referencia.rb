@@ -19,7 +19,11 @@ module Referencia
         end
         
         def gettitulo
-        return @titulo
+            return @titulo
+        end
+        
+        def getserie
+            return @serie
         end
         
         
