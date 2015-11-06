@@ -17,5 +17,18 @@ module Referencia
         def getautores
           return @autores
         end
+        
+        def gettitulo
+        return @titulo
+        end
+        
+        
+        
+        
+        
+        
+        
+        
+        
     end
 end
