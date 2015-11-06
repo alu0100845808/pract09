@@ -38,6 +38,9 @@ module Referencia
             return @fecha
         end
         
+        def getisbn
+            return @isbn
+        end
         
         
         
