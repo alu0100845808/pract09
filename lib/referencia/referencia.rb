@@ -26,6 +26,10 @@ module Referencia
             return @serie
         end
         
+        def geteditorial
+            return @editorial
+        end
+        
         
         
         

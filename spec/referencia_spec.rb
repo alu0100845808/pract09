@@ -24,6 +24,9 @@ describe Referencia do
     @libro.getserie.should eq("(The Facets of Ruby)")
   end 
           
+  it "Existe un método para obtener una editorial" do
+    @libro.geteditorial.should eq("Pragmatic Bookshelf")
+  end 
         
         
 end
