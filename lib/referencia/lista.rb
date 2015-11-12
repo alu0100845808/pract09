@@ -19,6 +19,18 @@ Node = Struct.new(:value, :next, :back)
          @head = @head.back
     end
     
+    def delBeg()
+        pepe=@heap.next
+        @heap=pepe
+        pepe.back=nil
+    end
+    
+    def delEnd()
+        pepe=@last.back
+        @last=pepe
+        pepe.next=nil
+    end
+    
  end
 
 end
