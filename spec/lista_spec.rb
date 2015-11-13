@@ -13,8 +13,8 @@ describe Referencia do
 		end
 		
 	it 'Se extrae el ultimo elemento de la lista' do
-			expect(@lista.takehead).to eq 0
-			expect(@lista.takehead).to eq nil
+			expect(@lista.takelast).to eq 0
+			expect(@lista.takelast).to eq nil
 		end
 
 end
