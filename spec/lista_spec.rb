@@ -7,4 +7,5 @@ describe Referencia do
     @lista = Referencia::Lista.new(0)
     end
     
+
 end
