@@ -34,10 +34,6 @@ describe Referencia do
       expect(@libro.getisbn).to eq(["ISBN-13: 978-1937785499","ISBN-10: 1937785491"])    
   end 
   
-  it "Existe un método para obtener uno más números ISBN" do
-    expect(@libro.getisbn).to eq(["ISBN-13: 978-1937785499","ISBN-10: 1937785491"])    
-  end 
-  
   it 'Existe un método para obtener la referencia formateada' do
     expect(@libro.formateada).to eq("Dave Thomas, Andy Hunt, Chad Fowler \n Programming Ruby 1.9 & 2.0: The Pragmatic Programmers' Guide \n (The Facets of Ruby) \n Pragmatic Bookshelf \n 4 edition \n (July 7, 2013) \n ISBN-13: 978-1937785499, ISBN-10: 1937785491") 
  end
