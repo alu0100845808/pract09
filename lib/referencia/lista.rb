@@ -15,14 +15,20 @@ Node = Struct.new(:value, :next, :back)
     end
     
     def addBeg(val)
+        if @head == nil
+            @head= Node.new(val,nil,nil)
+        else
          @head.back = Node.new(val,@head,nil)
          @head = @head.back
+        end
     end
     
     def delBeg()
-        pepe=@heap.next
-        @heap=pepe
-        pepe.back=nil
+        if @head != nil
+            pepe=@head.next
+            @head=nil
+            @head=pepe
+        end
     end
     
     def delEnd()
@@ -50,7 +56,6 @@ Node = Struct.new(:value, :next, :back)
 			return nil
 		end
     end
-    
  end
 
 end

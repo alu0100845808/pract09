@@ -16,5 +16,27 @@ describe Referencia do
 			expect(@lista.takelast).to eq 0
 			expect(@lista.takelast).to eq nil
 		end
+		
+		it 'Insertar al principio un elemento' do
+		    @lista.addBeg("pepe")
+			expect(@lista.takehead).to eq "pepe"
+		end
+		
+		it 'Elimina el principio' do
+		    @lista.addBeg("pepe")
+		    @lista.delBeg()
+			expect(@lista.takehead).to eq 0
+		end
+		
+		it 'Insertar al final un elemento' do
+		    @lista.addEnd("pepe")
+			expect(@lista.takelast).to eq "pepe"
+		end
+		
+		it 'Elimina el ultimo' do
+		    @lista.addEnd("pepe")
+		    @lista.delEnd()
+			expect(@lista.takelast).to eq 0
+		end
 
 end
