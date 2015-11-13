@@ -41,10 +41,10 @@ Node = Struct.new(:value, :next, :back)
 		end
     end
     
-    def takelast
-        if @node != nil
-			value = @node.value
-			@node = @node.back
+    def takelast()
+        if @last != nil
+			value = @last.value
+			@last = @last.back
 			return value
 		else
 			return nil

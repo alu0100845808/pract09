@@ -11,5 +11,10 @@ describe Referencia do
 			expect(@lista.takehead).to eq 0
 			expect(@lista.takehead).to eq nil
 		end
+		
+	it 'Se extrae el ultimo elemento de la lista' do
+			expect(@lista.takehead).to eq 0
+			expect(@lista.takehead).to eq nil
+		end
 
 end
