@@ -47,5 +47,19 @@ describe Referencia do
 			expect(@lista.takelast).to eq 0
 		end
 		
-
+		it "Pruebas con lista de referencias ultimo" do
+      expect(@lista2.takehead).to be @libro
+      expect(@lista2.takehead).to be @libro2
+      expect(@lista2.takehead).to be @libro3
+      expect(@lista2.takehead).to be @libro4
+      expect(@lista2.takehead).to be @libro5
+        end
+        
+        it "Pruebas con lista de referencias principio" do
+      expect(@lista2.takelast).to be @libro5
+      expect(@lista2.takelast).to be @libro4
+      expect(@lista2.takelast).to be @libro3
+      expect(@lista2.takelast).to be @libro2
+      expect(@lista2.takelast).to be @libro
+        end
 end
