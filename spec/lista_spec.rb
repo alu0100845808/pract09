@@ -7,5 +7,9 @@ describe Referencia do
     @lista = Referencia::Lista.new(0)
     end
     
+    it 'Se extrae el primer elemento de la lista' do
+			expect(@lista.takehead).to eq 0
+			expect(@lista.takehead).to eq nil
+		end
 
 end

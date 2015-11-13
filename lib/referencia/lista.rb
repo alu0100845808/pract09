@@ -31,10 +31,10 @@ Node = Struct.new(:value, :next, :back)
         pepe.next=nil
     end
     
-    def takehead
-        if @node != nil
-			value = @node.value
-			@node = @node.next
+    def takehead()
+        if @head != nil
+			value = @head.value
+			@head = @head.next
 			return value
 		else
 			return nil
