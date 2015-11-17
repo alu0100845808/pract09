@@ -62,4 +62,11 @@ describe Referencia do
       expect(@lista2.takelast).to be @libro2
       expect(@lista2.takelast).to be @libro
         end
+         it "Pruebas de Eleazar" do
+            expect(@lista2.takelast).to be @libro5
+            @lista2.addEnd(5)
+            expect(@lista2.takelast).to be 5
+
+            
+        end
 end

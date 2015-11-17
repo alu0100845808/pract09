@@ -44,7 +44,7 @@ Node = Struct.new(:value, :next, :back)
 			return value
 		else
 			return nil
-		end
+	end
     end
     
     def takelast()
@@ -54,7 +54,7 @@ Node = Struct.new(:value, :next, :back)
 			return value
 		else
 			return nil
-		end
+	end
     end
  end
 
