@@ -68,3 +68,33 @@ describe "Libro" do
           expect(@libro2.instance_of?(Referencia::Entrada)).to eq false
         end
 end
+
+
+describe "Publicacion" do
+  before :each do
+    @libro2 = Referencia::Publicacion.new(["Dave Thomas", "Andy Hunt", "Chad Fowler"],"Programming Ruby 1.9 & 2.0: The Pragmatic Programmers' Guide", "(The Facets of Ruby)", "Pragmatic Bookshelf", "4 edition", "(July 7, 2013)", ["ISBN-13: 978-1937785499","ISBN-10: 1937785491"],"http://noexiste.com/")
+  end
+  
+  it "Es un libro" do
+		    expect(@libro2.is_a?Referencia::Publicacion).to eq true 
+		end
+		
+		it "Es subclase de Referencia" do
+		    expect(@libro2.is_a?Referencia::Entrada).to eq true 
+		end
+		
+		it "Es un Object" do
+		    expect(@libro2.is_a?Object).to eq true 
+		end
+	    
+	    it "Es subclase de BasicObject" do
+		    expect(@libro2.is_a?BasicObject).to eq true
+		end
+        it "Es una instancia de libro" do
+          expect(@libro2.instance_of?(Referencia::Publicacion)).to eq true
+        end
+        
+          it "Es una instancia de entrada" do
+          expect(@libro2.instance_of?(Referencia::Entrada)).to eq false
+        end
+end
