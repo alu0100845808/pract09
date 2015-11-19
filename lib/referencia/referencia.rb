@@ -42,13 +42,5 @@ module Referencia
         def formateada()
             "#{@autores.join(", ")} \n #{@titulo} \n #{@serie} \n #{@editorial} \n #{@numedicion} \n #{@fecha} \n #{@isbn.join(", ")}"
         end
-        
-        
-        
-        
-        
-        
-        
-        
     end
 end
