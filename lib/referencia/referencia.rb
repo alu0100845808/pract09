@@ -13,7 +13,7 @@ module Referencia
         end
 
         def <=>(other)
-            @autores <=> other.autores
+            @autores <=> other.getautores()
         end
         
         def getautores

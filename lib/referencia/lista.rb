@@ -9,6 +9,7 @@ Node = Struct.new(:value, :next, :back)
         aux=@head
         while aux != nil
             yield aux.value
+            aux=aux.next
         end
     end
 

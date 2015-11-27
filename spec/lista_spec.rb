@@ -69,7 +69,22 @@ describe Referencia do
             expect(@lista2.takelast).to be 5
         end
         
-        it "Es enumerable" do
-            expect(@list.inject(true) do |state, libro|state && libro.instance_of?(Referencia::Entrada)end).to be true
+        it "all?" do
+            @lista.addBeg(@libro)
+            expect(@lista.all?).to eq(true)
         end
+        
+        it "any?" do
+            @lista.addBeg(@libro)
+            expect(@lista.any?).to eq(true)
+        end
+        
+        it "max and min" do
+            @lista.addEnd(1)
+            @lista.addEnd(8)
+            @lista.addEnd(7)
+            expect(@lista.max).to eq(8)
+            expect(@lista.min).to eq(0)
+        end
+        
 end

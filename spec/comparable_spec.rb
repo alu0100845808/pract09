@@ -7,11 +7,11 @@ require 'spec_helper'
     end
     
     	it "Compara >" do
-		    expect(@libro > @libro2).to be true
+		    expect(@libro > @libro2).to be false
 		end
 		
 		it "Compara <" do
-		    expect(@libro < @libro2).to be false
+		    expect(@libro < @libro2).to be true
 		end
 		
 		it "Compara ==" do
