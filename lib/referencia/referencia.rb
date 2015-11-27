@@ -1,7 +1,7 @@
 module Referencia
 
     class Entrada
-            include Comparable
+        include Comparable
         def initialize(autores, titulo, serie = nil, editorial, numedicion, fecha, isbn)
             @autores = autores
             @titulo = titulo
@@ -11,7 +11,11 @@ module Referencia
             @fecha = fecha
             @isbn = isbn
         end
-    
+
+        def <=>(other)
+            @autores <=> other.autores
+        end
+        
         def getautores
           return @autores
         end
