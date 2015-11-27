@@ -1,6 +1,7 @@
 module Referencia
 
     class Entrada
+            include Comparable
         def initialize(autores, titulo, serie = nil, editorial, numedicion, fecha, isbn)
             @autores = autores
             @titulo = titulo
