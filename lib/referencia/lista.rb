@@ -3,10 +3,18 @@ module Referencia
 Node = Struct.new(:value, :next, :back)
 
  class Lista
+     include Enumerable
+     
+    def each
+        aux=@head
+        while aux != nil
+            yield aux.value
+        end
+    end
 
     def initialize(value)
-     @head = Node.new(value,nil,nil)
-     @last = @head
+        @head = Node.new(value,nil,nil)
+        @last = @head
     end
      
     def addEnd(val)
@@ -18,8 +26,8 @@ Node = Struct.new(:value, :next, :back)
         if @head == nil
             @head= Node.new(val,nil,nil)
         else
-         @head.back = Node.new(val,@head,nil)
-         @head = @head.back
+            @head.back = Node.new(val,@head,nil)
+            @head = @head.back
         end
     end
     
